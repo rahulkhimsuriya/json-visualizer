@@ -1,6 +1,6 @@
 # JSON Visualiser Studio
 
-> **A fast, privacy-first, browser-based JSON data studio.**  
+> **A fast, privacy-first, browser-based JSON data studio.**
 > Ingest, normalize, query with SQL, explore with virtualized tables, and export datasets—**100% locally in your browser**. Zero server uploads.
 
 ![Privacy First](https://img.shields.io/badge/Privacy-100%25%20Local%20Browser-emerald?style=flat-square)
@@ -9,6 +9,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36d489ec-c88e-4606-908e-e068fee7f83f/deploy-status?branch=main)](https://app.netlify.com/projects/json-visualiser-studio/deploys?branch=main)
 
 ---
 
@@ -17,7 +18,9 @@
 Most JSON viewers only display raw trees or format strings. **JSON Visualiser** transforms messy or nested JSON payloads into structured tabular datasets, extracts schema types, lets you run complex **SQL queries** right in the browser, and exports clean results in multiple formats.
 
 ### 🛡️ Privacy Guarantee
+
 **Your data never leaves your machine.**
+
 - All JSON parsing, normalization, schema inference, and SQL execution occur client-side inside your browser sandbox.
 - Query history, saved queries, and session state are persisted securely in your local browser storage ([IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)).
 - No telemetry or external server tracking of user data payloads.
@@ -111,28 +114,33 @@ Most JSON viewers only display raw trees or format strings. **JSON Visualiser** 
 ## 💻 Getting Started
 
 ### Prerequisites
+
 - **Node.js**: v18.0.0 or higher
 - **npm**, **pnpm**, or **yarn**
 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/rahulkhimsuriya/json-visualiser.git
    cd json-visualiser
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
 
 4. Open your browser and navigate to:
+
    ```text
    http://localhost:5173
    ```
