@@ -7,7 +7,7 @@ import type { Dataset } from '../types/dataset';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Import JSON — JSON Visualiser' },
+    { title: 'Import JSON — JSON Visualizer' },
     {
       name: 'description',
       content: 'Paste, upload, or drag-and-drop JSON files for local in-browser analysis.',

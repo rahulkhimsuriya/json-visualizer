@@ -10,8 +10,8 @@ const STORAGE_KEYS = {
   ACTIVE_DATASET_ID: 'json_vis_active_dataset_id',
   DATASET_INDEX: 'json_vis_dataset_index', // Array of dataset IDs in order
   IDB_PREFIX: 'dataset_',
-  IDB_DB_NAME: 'JsonVisualiserStudioDb',
-  IDB_STORE_NAME: 'JsonVisualiserStudio',
+  IDB_DB_NAME: 'JsonVisualizerStudioDb',
+  IDB_STORE_NAME: 'JsonVisualizerStudio',
 };
 
 let studioStoreInstance: UseStore | undefined;

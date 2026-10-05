@@ -1,4 +1,4 @@
-# CLAUDE.md — Agent Guidelines for JSON Visualiser Studio
+# CLAUDE.md — Agent Guidelines for JSON Visualizer Studio
 
 This document provides project instructions, commands, and architectural conventions for Anthropic Claude (Claude Code CLI, Claude Desktop, and Claude tools).
 
@@ -23,7 +23,7 @@ This document provides project instructions, commands, and architectural convent
 - **No Remote Telemetry or Cloud Transmission**: Do not introduce network calls, cloud databases, external endpoints, or remote tracking for user JSON datasets or queries.
 - **Pure Client Processing**: Parsing, schema inference, auto-flattening, formatting, and SQL executions run strictly in-memory (AlaSQL) inside the user's browser runtime.
 - **Browser Persistence**:
-  - **IndexedDB**: Database `JsonVisualiserStudioDb`, object store `JsonVisualiserStudio` (via `app/lib/storage.ts` with `idb-keyval`).
+  - **IndexedDB**: Database `JsonVisualizerStudioDb`, object store `JsonVisualizerStudio` (via `app/lib/storage.ts` with `idb-keyval`).
   - **localStorage**: Application preferences (`json_vis_settings`), query history, saved queries.
 
 ---
@@ -31,7 +31,7 @@ This document provides project instructions, commands, and architectural convent
 ## 🏛️ Architecture & Source Organization
 
 ```text
-json-visualiser-app/
+json-visualizer-app/
 ├── .claude/                  # Claude Code configurations, rules, and skills
 │   ├── settings.json         # Tool permissions & safety guards
 │   ├── rules/                # Path-scoped instructions (client-privacy, virtualization)

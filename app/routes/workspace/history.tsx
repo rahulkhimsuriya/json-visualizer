@@ -8,7 +8,7 @@ import type { QueryHistoryItem } from '../../types/query';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Query History — JSON Visualiser' },
+    { title: 'Query History — JSON Visualizer' },
     { name: 'description', content: 'Review and re-run past SQL queries executed locally.' },
   ];
 }

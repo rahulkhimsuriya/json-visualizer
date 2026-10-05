@@ -1,4 +1,4 @@
-# AGENTS.md — Universal Agent Instructions for JSON Visualiser Studio
+# AGENTS.md — Universal Agent Instructions for JSON Visualizer Studio
 
 This repository contains specialized agent configuration files and memory directives optimized for major AI programming assistants according to their official documentation standards:
 
@@ -12,7 +12,7 @@ This repository contains specialized agent configuration files and memory direct
 
 ## 📌 Project Identity & Mission
 
-- **Project**: JSON Visualiser Studio (`json-visualiser-app`)
+- **Project**: JSON Visualizer Studio (`json-visualizer-app`)
 - **Type**: 100% client-side privacy-first web application built with React 19, React Router v8, Tailwind CSS v4, AlaSQL, TanStack Virtual, and Vite.
 - **Privacy Guarantee**: **Zero Server Transmission**. All JSON formatting, flattening, schema generation, SQL execution, and table visualization execute purely inside the client's browser runtime. No data is ever sent to external clouds or servers.
 
@@ -40,8 +40,8 @@ npm run start
 ## 💾 Client Storage Boundaries
 
 - **IndexedDB**:
-  - Database Name: `JsonVisualiserStudioDb`
-  - Object Store: `JsonVisualiserStudio`
+  - Database Name: `JsonVisualizerStudioDb`
+  - Object Store: `JsonVisualizerStudio`
   - Managed by `app/lib/storage.ts` using `idb-keyval` custom store to store datasets without size limitations.
 - **localStorage**:
   - `json_vis_settings`: Theme preference, row density, pagination defaults, SQL defaults.
@@ -53,7 +53,7 @@ npm run start
 ## 🏛️ Directory Layout
 
 ```text
-json-visualiser-app/
+json-visualizer-app/
 ├── .claude/                  # Claude Code config, permissions & rules
 │   ├── settings.json         # Tool permissions & safety guards
 │   ├── rules/                # Scoped rules (client-privacy.md, react-virtualization.md)

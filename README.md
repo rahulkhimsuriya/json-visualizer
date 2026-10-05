@@ -1,4 +1,4 @@
-# JSON Visualiser Studio
+# JSON Visualizer Studio
 
 > **A fast, privacy-first, browser-based JSON data studio.**
 > Ingest, normalize, query with SQL, explore with virtualized tables, and export datasets—**100% locally in your browser**. Zero server uploads.
@@ -9,13 +9,13 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/36d489ec-c88e-4606-908e-e068fee7f83f/deploy-status?branch=main)](https://app.netlify.com/projects/json-visualiser-studio/deploys?branch=main)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36d489ec-c88e-4606-908e-e068fee7f83f/deploy-status?branch=main)](https://app.netlify.com/projects/json-visualizer-studio/deploys?branch=main)
 
 ---
 
 ## 🌟 Overview
 
-Most JSON viewers only display raw trees or format strings. **JSON Visualiser** transforms messy or nested JSON payloads into structured tabular datasets, extracts schema types, lets you run complex **SQL queries** right in the browser, and exports clean results in multiple formats.
+Most JSON viewers only display raw trees or format strings. **JSON Visualizer** transforms messy or nested JSON payloads into structured tabular datasets, extracts schema types, lets you run complex **SQL queries** right in the browser, and exports clean results in multiple formats.
 
 ### 🛡️ Privacy Guarantee
 
@@ -123,8 +123,8 @@ Most JSON viewers only display raw trees or format strings. **JSON Visualiser** 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rahulkhimsuriya/json-visualiser.git
-   cd json-visualiser
+   git clone https://github.com/rahulkhimsuriya/json-visualizer.git
+   cd json-visualizer
    ```
 
 2. Install dependencies:

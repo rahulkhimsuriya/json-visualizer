@@ -131,7 +131,7 @@ export function meta({}: Route.MetaArgs) {
     {
       tagName: 'link',
       rel: 'canonical',
-      href: 'https://jsonvisualiser.com/formatter',
+      href: 'https://json-visualizer-studio.netlify.app/formatter',
     },
   ];
 }
@@ -536,7 +536,7 @@ export default function FormatterPage() {
                 setInputJson(e.target.value);
                 if (validationError) setValidationError(null);
               }}
-              placeholder={`// 1. Paste raw JSON here, or\n// 2. Click "Upload JSON File" above, or\n// 3. Drag and drop a .json file directly into this area.\n\n{\n  "name": "JSON Visualiser",\n  "offline": true\n}`}
+              placeholder={`// 1. Paste raw JSON here, or\n// 2. Click "Upload JSON File" above, or\n// 3. Drag and drop a .json file directly into this area.\n\n{\n  "name": "JSON Visualizer",\n  "offline": true\n}`}
               spellCheck={false}
               className="w-full h-full min-h-0 p-4 font-mono text-xs sm:text-sm text-slate-900 dark:text-slate-100 bg-transparent border-0 focus:outline-none resize-none leading-relaxed selection:bg-emerald-500/20 overflow-auto"
             />

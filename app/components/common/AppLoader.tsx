@@ -40,7 +40,7 @@ export const AppLoader: React.FC<AppLoaderProps> = ({
       id="app-loader"
       role="status"
       aria-live="polite"
-      aria-label="Loading JSON Visualiser Studio"
+      aria-label="Loading JSON Visualizer Studio"
       className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-50/95 dark:bg-[#080b12]/95 backdrop-blur-md ambient-glow transition-opacity duration-300 ease-out select-none ${
         isFading ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
@@ -58,7 +58,7 @@ export const AppLoader: React.FC<AppLoaderProps> = ({
         <h1 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
           JSON
           <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400 bg-clip-text text-transparent">
-            Visualiser
+            Visualizer
           </span>
         </h1>
 

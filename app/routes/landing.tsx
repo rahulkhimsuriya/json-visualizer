@@ -29,7 +29,7 @@ import { PRESET_DATASETS, SAMPLE_USERS, type SampleDatasetPreset } from '../lib/
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'JSON Visualiser — Query JSON with SQL & Interactive Tables Locally' },
+    { title: 'JSON Visualizer — Query JSON with SQL & Interactive Tables Locally' },
     {
       name: 'description',
       content:
@@ -42,25 +42,25 @@ export function meta({}: Route.MetaArgs) {
     },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: 'JSON Visualiser' },
+    { property: 'og:site_name', content: 'JSON Visualizer' },
     {
       property: 'og:title',
-      content: 'JSON Visualiser — Query JSON with SQL & Interactive Tables Locally',
+      content: 'JSON Visualizer — Query JSON with SQL & Interactive Tables Locally',
     },
     {
       property: 'og:description',
       content:
         'Transform raw JSON into interactive tables, inspect schemas, and run SQL queries locally with zero server uploads.',
     },
-    { property: 'og:url', content: 'https://jsonvisualiser.com/' },
+    { property: 'og:url', content: 'https://json-visualizer-studio.netlify.app/' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'JSON Visualiser — In-Browser SQL & Table Tool for JSON' },
+    { name: 'twitter:title', content: 'JSON Visualizer — In-Browser SQL & Table Tool for JSON' },
     {
       name: 'twitter:description',
       content:
         'Transform raw JSON into interactive tables, inspect schemas, and execute SQL queries in your browser. 100% client-side privacy.',
     },
-    { tagName: 'link', rel: 'canonical', href: 'https://jsonvisualiser.com/' },
+    { tagName: 'link', rel: 'canonical', href: 'https://json-visualizer-studio.netlify.app/' },
   ];
 }
 
@@ -68,12 +68,12 @@ const FAQS = [
   {
     question: 'How does in-browser SQL querying work on JSON files?',
     answer:
-      "JSON Visualiser embeds AlaSQL, an in-memory SQL database engine executing directly in your browser's JavaScript runtime. It normalizes parsed JSON objects into relational tables, allowing you to run standard SQL queries including SELECT, WHERE, GROUP BY, aggregations (SUM, AVG, COUNT), and multi-dataset JOINs with sub-millisecond execution times without needing any backend server.",
+      "JSON Visualizer embeds AlaSQL, an in-memory SQL database engine executing directly in your browser's JavaScript runtime. It normalizes parsed JSON objects into relational tables, allowing you to run standard SQL queries including SELECT, WHERE, GROUP BY, aggregations (SUM, AVG, COUNT), and multi-dataset JOINs with sub-millisecond execution times without needing any backend server.",
   },
   {
     question: 'Is my JSON data private and secure?',
     answer:
-      'Yes, 100% private. JSON Visualiser runs entirely client-side in your browser. Your JSON datasets are never uploaded to any remote server, cloud API, or third-party analytics service. It is safe for sensitive API tokens, production database dumps, and GDPR/HIPAA-regulated records.',
+      'Yes, 100% private. JSON Visualizer runs entirely client-side in your browser. Your JSON datasets are never uploaded to any remote server, cloud API, or third-party analytics service. It is safe for sensitive API tokens, production database dumps, and GDPR/HIPAA-regulated records.',
   },
   {
     question: 'What JSON structures are supported?',
@@ -83,7 +83,7 @@ const FAQS = [
   {
     question: 'What is the file size limit for importing JSON?',
     answer:
-      "Since processing happens locally, capacity is determined by your device's memory. JSON Visualiser easily handles datasets with tens of thousands of records. Datasets persist client-side in IndexedDB, completely bypassing the standard 5MB browser localStorage limits.",
+      "Since processing happens locally, capacity is determined by your device's memory. JSON Visualizer easily handles datasets with tens of thousands of records. Datasets persist client-side in IndexedDB, completely bypassing the standard 5MB browser localStorage limits.",
   },
   {
     question: 'Can I export data to CSV or formatted JSON?',
@@ -91,9 +91,9 @@ const FAQS = [
       'Yes. You can export active tables, filtered views, or SQL query results with one click into standard CSV files or formatted JSON documents.',
   },
   {
-    question: 'Does JSON Visualiser work offline?',
+    question: 'Does JSON Visualizer work offline?',
     answer:
-      'Yes. Once loaded, JSON Visualiser functions entirely without an active internet connection. You can use it securely in air-gapped environments or while traveling.',
+      'Yes. Once loaded, JSON Visualizer functions entirely without an active internet connection. You can use it securely in air-gapped environments or while traveling.',
   },
 ];
 
@@ -102,9 +102,9 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'WebApplication',
-      '@id': 'https://jsonvisualiser.com/#app',
-      name: 'JSON Visualiser',
-      url: 'https://jsonvisualiser.com/',
+      '@id': 'https://json-visualizer-studio.netlify.app/#app',
+      name: 'JSON Visualizer',
+      url: 'https://json-visualizer-studio.netlify.app/',
       description:
         'Transform raw JSON into interactive tables, inspect schemas, and execute SQL queries locally in your browser with 100% client-side privacy.',
       applicationCategory: 'DeveloperApplication',
@@ -126,7 +126,7 @@ const structuredData = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://jsonvisualiser.com/#faq',
+      '@id': 'https://json-visualizer-studio.netlify.app/#faq',
       mainEntity: FAQS.map((faq) => ({
         '@type': 'Question',
         name: faq.question,
@@ -704,7 +704,7 @@ export default function Landing() {
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             Most online JSON viewers upload your payloads to remote servers for processing. JSON
-            Visualiser runs 100% in your browser runtime — safe for credentials, enterprise APIs,
+            Visualizer runs 100% in your browser runtime — safe for credentials, enterprise APIs,
             and customer records.
           </p>
         </div>
@@ -839,7 +839,7 @@ export default function Landing() {
                 <FileJson className="w-5 h-5" aria-hidden="true" />
               </span>
               <span className="text-sm font-black tracking-tight text-slate-900 dark:text-white">
-                JSON Visualiser
+                JSON Visualizer
               </span>
             </Link>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
@@ -974,7 +974,7 @@ export default function Landing() {
         </div>
 
         <div className="mt-8 pt-5 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500 dark:text-slate-400">
-          <p>© {new Date().getFullYear()} JSON Visualiser · Free forever</p>
+          <p>© {new Date().getFullYear()} JSON Visualizer · Free forever</p>
           <p className="inline-flex items-center gap-1.5">
             <Lock className="w-3.5 h-3.5 text-emerald-500" aria-hidden="true" />
             No tracking · No uploads · Works offline

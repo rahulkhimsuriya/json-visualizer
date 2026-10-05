@@ -1,5 +1,5 @@
 {
-  "name": "json-visualiser-app",
+  "name": "json-visualizer-app",
   "private": true,
   "type": "module",
   "scripts": {

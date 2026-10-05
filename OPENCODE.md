@@ -1,6 +1,6 @@
-# OPENCODE.md — OpenCode Instructions for JSON Visualiser Studio
+# OPENCODE.md — OpenCode Instructions for JSON Visualizer Studio
 
-This document provides project rules, runtime context, and conventions for **OpenCode** agents working in **JSON Visualiser Studio**. It is referenced in `opencode.json`.
+This document provides project rules, runtime context, and conventions for **OpenCode** agents working in **JSON Visualizer Studio**. It is referenced in `opencode.json`.
 
 ---
 
@@ -28,7 +28,7 @@ npm run start
 - **Zero Server Transmission**: User data must never be transmitted outside the browser. Do not add cloud storage, tracking scripts, or remote endpoints.
 - **Client Processing**: Parsing, schema inference, auto-flattening, and AlaSQL queries run entirely in the browser engine.
 - **Persistent Storage**:
-  - **IndexedDB**: DB `JsonVisualiserStudioDb`, object store `JsonVisualiserStudio` via `idb-keyval` custom store in `app/lib/storage.ts`.
+  - **IndexedDB**: DB `JsonVisualizerStudioDb`, object store `JsonVisualizerStudio` via `idb-keyval` custom store in `app/lib/storage.ts`.
   - **localStorage**: User preferences (`json_vis_settings`), query history, saved queries.
 
 ---
@@ -54,7 +54,7 @@ app/
 │   └── WorkspaceContext.tsx  # Global state (datasets, active dataset, settings)
 ├── types/                    # dataset.ts, query.ts, settings.ts
 ├── lib/
-│   ├── storage.ts            # IndexedDB (JsonVisualiserStudioDb) & localStorage
+│   ├── storage.ts            # IndexedDB (JsonVisualizerStudioDb) & localStorage
 │   ├── json-processor.ts     # JSON parsing, schema inference, format & minify
 │   ├── sql-engine.ts         # In-memory AlaSQL execution
 │   └── export-utils.ts       # CSV, TSV, Markdown, JSON export

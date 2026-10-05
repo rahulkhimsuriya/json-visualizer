@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /workspace/
 
-Sitemap: https://jsonvisualiser.com/sitemap.xml
+Sitemap: https://json-visualizer-studio.netlify.app/sitemap.xml

@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-base tracking-tight text-slate-900 dark:text-white">
-                  JSON<span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400 bg-clip-text text-transparent">Visualiser</span>
+                  JSON<span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400 bg-clip-text text-transparent">Visualizer</span>
                 </span>
               </div>
             </Link>
@@ -141,7 +141,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-1 sm:gap-2">
             {/* GitHub Repository */}
             <a
-              href="https://github.com/rahulkhimsuriya/json-visualiser"
+              href="https://github.com/rahulkhimsuriya/json-visualizer"
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub Repository"

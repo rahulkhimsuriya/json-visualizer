@@ -26,7 +26,7 @@ import { getStorageUsageEstimate } from '../lib/storage';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Settings — JSON Visualiser' },
+    { title: 'Settings — JSON Visualizer' },
     {
       name: 'description',
       content:
@@ -253,7 +253,7 @@ export default function SettingsPage() {
                 Appearance & Visual Theme
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Choose how JSONVisualiser looks or synchronize with your device’s system color mode.
+                Choose how JSONVisualizer looks or synchronize with your device’s system color mode.
               </p>
             </div>
           </div>

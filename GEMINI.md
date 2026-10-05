@@ -1,6 +1,6 @@
 # GEMINI.md — Gemini CLI & Agent Memory Guide
 
-This document provides persistent context, project constraints, and architectural instructions for **Gemini CLI** and Google Gemini models assisting with **JSON Visualiser Studio**.
+This document provides persistent context, project constraints, and architectural instructions for **Gemini CLI** and Google Gemini models assisting with **JSON Visualizer Studio**.
 
 ---
 
@@ -40,8 +40,8 @@ Gemini CLI automatically discovers and loads this `GEMINI.md` into the agent's a
 ## 💾 Storage & Data Architecture
 
 - **IndexedDB**:
-  - Database Name: `JsonVisualiserStudioDb`
-  - Object Store: `JsonVisualiserStudio`
+  - Database Name: `JsonVisualizerStudioDb`
+  - Object Store: `JsonVisualizerStudio`
   - Configured in `app/lib/storage.ts` using `idb-keyval`'s `createStore`.
   - Holds full dataset records to avoid `localStorage` size limits.
 - **localStorage**:

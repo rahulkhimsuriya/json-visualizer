@@ -8,7 +8,7 @@ import type { SavedQuery } from '../../types/query';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Saved Queries — JSON Visualiser' },
+    { title: 'Saved Queries — JSON Visualizer' },
     { name: 'description', content: 'Manage and run your saved SQL query bookmarks.' },
   ];
 }
